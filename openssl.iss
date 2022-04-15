@@ -3,7 +3,7 @@
 
 #define MyAppName "OpenSSL"
 #define MyAppVersion "3.0.2"
-;#define MyAppVersion "1.1.1n"
+;#define MyAppVersion "1-1-1n"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -22,11 +22,12 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={commonpf}\{#MyAppName}
+;DefaultDirName={commonpf64}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=LICENSE-inst.txt
-OutputDir={userdocs}\OpenSSL
+OutputDir=C:\OpenSSL
 OutputBaseFilename=openssl-{#MyAppVersion}-{#MyAPPArchitecture}
 SetupIconFile=openssl.ico
 SolidCompression=yes
