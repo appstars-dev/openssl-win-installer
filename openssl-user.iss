@@ -46,10 +46,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
                             
 [Files]
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\bin\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Binaries
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\html\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Documents
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\include\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Inclib
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\lib\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Inclib
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\bin\*"; DestDir: "{app}\bin"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Binaries
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\html\*"; DestDir: "{app}\html"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Documents
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\include\*"; DestDir: "{app}\include"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Inclib
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\lib\*"; DestDir: "{app}\lib"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Inclib
 Source: "openssl.ico"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]

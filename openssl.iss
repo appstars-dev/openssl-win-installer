@@ -47,10 +47,10 @@ Name: envPath; Description: "Add to PATH variable"
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\bin\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs; Components: Binaries
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\html\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs; Components: Documents
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\include\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs; Components: Inclib
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\lib\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs; Components: Inclib
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\bin\*"; DestDir: "{app}\bin"; Flags: recursesubdirs createallsubdirs; Components: Binaries
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\html\*"; DestDir: "{app}\html"; Flags: recursesubdirs createallsubdirs; Components: Documents
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\include\*"; DestDir: "{app}\include"; Flags: recursesubdirs createallsubdirs; Components: Inclib
+Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\lib\*"; DestDir: "{app}\lib"; Flags: recursesubdirs createallsubdirs; Components: Inclib
 Source: "openssl.ico"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
