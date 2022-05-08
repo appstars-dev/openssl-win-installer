@@ -7,6 +7,7 @@
 ;#define MyAPPArchitecture "win32"
 #define MyAPPArchitecture "win64"
 
+
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
@@ -21,6 +22,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 ;DefaultDirName={commonpf}\{#MyAppName}
 DefaultDirName={commonpf64}\{#MyAppName}
+ArchitecturesInstallIn64BitMode=x64
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=LICENSE-inst.txt
@@ -40,7 +42,7 @@ ChangesEnvironment=true
 
 [Languages]
 Name: "english";    MessagesFile: "compiler:Default.isl"
-Name: "armenian"    MessagesFile: "compiler:Languages\Armenian.isl"
+Name: "armenian";   MessagesFile: "compiler:Languages\Armenian.isl"
 Name: "brazilian";  MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
 Name: "bulgarian";  MessagesFile: "compiler:Languages\Bulgarian.isl"
 Name: "catalan";    MessagesFile: "compiler:Languages\Catalan.isl"
@@ -89,7 +91,7 @@ Name: "{group}\{#MyAppName} offline manual"; Filename: "{app}\html\man1\openssl.
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Components]
-Name: "Binaries"; Description: "Base binaries of the tool"; Types: compact custom full; Flags: checkablealone fixed; Languages: english
+Name: "Binaries"; Description: "Base binaries of the tool"; Types: compact custom full; Flags: checkablealone fixed;
 Name: "Documents"; Description: "HTML manual"; Types: custom full
 Name: "Inclib"; Description: "Includes & libraries"; Types: full custom
 
