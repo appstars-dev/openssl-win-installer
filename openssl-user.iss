@@ -81,9 +81,9 @@ Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Fil
 Name: "{group}\{#MyAppName} offline manual"; Filename: "{app}\html\man1\openssl.html"; IconFilename: "{app}\openssl.ico"; IconIndex: 0; Components: Documents
 
 [Components]
-Name: "Binaries"; Description: "Base binaries of the tool"; Types: compact custom full; Flags: checkablealone fixed; Languages: english
-Name: "Documents"; Description: "HTML manual"; Types: custom full
-Name: "Inclib"; Description: "Includes and libraries"; Types: full custom
+Name: "Binaries"; Description: "{cm:BaseBinaries}"; Types: compact custom full; Flags: checkablealone fixed;
+Name: "Documents"; Description: "{cm:UsrManual,HTML}"; Types: custom full
+Name: "Inclib"; Description: "{cm:IncLib}"; Types: full custom
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{cmd}"; Parameters: "/K ""{app}\{#MyAppExeName}"" version"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent

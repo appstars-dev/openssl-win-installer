@@ -25,7 +25,7 @@ DefaultDirName={commonpf64}\{#MyAppName}
 ArchitecturesInstallIn64BitMode=x64
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile=LICENSE-inst.txt
+LicenseFile=LICENSE-inst.rtf
 OutputDir=C:\OpenSSL
 OutputBaseFilename=openssl-{#MyAppVersion}-{#MyAPPArchitecture}
 SetupIconFile=openssl.ico
@@ -69,7 +69,7 @@ Name: "Ukrainian";  MessagesFile: "compiler:Languages\Ukrainian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
-Name: envPath; Description: "Add to PATH variable"
+Name: envPath; Description: "{cm:AddToVar,PATH}"
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
@@ -88,12 +88,12 @@ Name: "{userappdata}\Microsoft\Internet Explorer\Quick Launch\{#MyAppName}"; Fil
 Name: "{group}\{#MyAppName} offline manual"; Filename: "{app}\html\man1\openssl.html"; IconFilename: "{app}\openssl.ico"; IconIndex: 0; Components: Documents
 
 [Run]
-Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{cmd}"; Parameters: "/K ""{app}\{#MyAppExeName}"" version"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Components]
-Name: "Binaries"; Description: "Base binaries of the tool"; Types: compact custom full; Flags: checkablealone fixed;
-Name: "Documents"; Description: "HTML manual"; Types: custom full
-Name: "Inclib"; Description: "Includes & libraries"; Types: full custom
+Name: "Binaries"; Description: "{cm:BaseBinaries}"; Types: compact custom full; Flags: checkablealone fixed;
+Name: "Documents"; Description: "{cm:UsrManual,HTML}"; Types: custom full
+Name: "Inclib"; Description: "{cm:IncLib}"; Types: full custom
 
 [Code]
 function InitializeSetup: Boolean;
