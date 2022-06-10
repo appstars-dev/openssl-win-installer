@@ -63,6 +63,7 @@ Name: "Ukrainian";  MessagesFile: "compiler:Languages\Ukrainian.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+Name: envPath; Description: "{cm:AddToVar,PATH}"
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
                             
 [Files]
@@ -87,3 +88,16 @@ Name: "Inclib"; Description: "{cm:IncLib}"; Types: full custom
 
 [Run]
 Filename: "{cmd}"; Parameters: "/K ""{app}\{#MyAppExeName}"" version"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+
+[Code]
+procedure CurStepChanged(CurStep: TSetupStep);
+begin
+    if CurStep = ssPostInstall 
+     then EnvUsrAddPath(ExpandConstant('{app}') +'\bin');
+end;
+
+procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
+begin
+    if CurUninstallStep = usPostUninstall
+    then EnvUsrRemovePath(ExpandConstant('{app}') +'\bin');
+end;
