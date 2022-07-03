@@ -1,6 +1,6 @@
 #define MyAppName "OpenSSL"
-#define MyAppVersion "3.0.3"
-;#define MyAppVersion "1.1.1o"
+;#define MyAppVersion "3.0.4"
+#define MyAppVersion "1.1.1p"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -33,10 +33,11 @@ WizardSmallImageFile=os.bmp
 WizardStyle=modern
 Compression=lzma2/ultra64
 ChangesEnvironment=true
+#include "environment.iss"
 
 [Languages]
 Name: "english";    MessagesFile: "compiler:Default.isl"
-Name: "armenian"    MessagesFile: "compiler:Languages\Armenian.isl"
+Name: "armenian";   MessagesFile: "compiler:Languages\Armenian.isl"
 Name: "brazilian";  MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
 Name: "bulgarian";  MessagesFile: "compiler:Languages\Bulgarian.isl"
 Name: "catalan";    MessagesFile: "compiler:Languages\Catalan.isl"

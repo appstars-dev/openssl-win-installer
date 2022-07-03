@@ -43,8 +43,6 @@ begin
     else Log(Format('Error while removing the [%s] from PATH: [%s]', [Path, Paths]));
 end;
 
-[Code]
-const EnvironmentKey = 'SYSTEM\CurrentControlSet\Control\Session Manager\Environment';
 
 procedure EnvUsrAddPath(Path: string);
 var

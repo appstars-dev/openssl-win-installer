@@ -1,6 +1,6 @@
 #define MyAppName "OpenSSL"
-#define MyAppVersion "3.0.3"
-;#define MyAppVersion "1.1.1o"
+;#define MyAppVersion "3.0.4"
+#define MyAppVersion "1.1.1p"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
