@@ -5,3 +5,4 @@ Prerequisites
 *.zip
 *.7z
 */Thumbs.db
+.wget-hsts
