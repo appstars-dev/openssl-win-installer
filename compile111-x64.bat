@@ -5,14 +5,14 @@ cd C:\
 mkdir %BTARCH%
 cd %BTARCH%
 set VCINSTALLDIR=D:\Microsoft Visual Studio\2022\Enterprise\VC
-rem Need a version i.e. 3.1.3
+rem Need a version i.e. w
 set /P OSSLV="TYPE VERSION:"
-set COMPILEDIR=c:\openssl-build\openssl-%OSSLV%-%BTARCH%
-curl -LJO https://github.com/openssl/openssl/releases/download/openssl-%OSSLV%/openssl-%OSSLV%.tar.gz
-rem %~dp0wget.exe --content-disposition https://github.com/openssl/openssl/releases/download/openssl-%OSSLV%/openssl-%OSSLV%.tar.gz
-tar xvfz openssl-%OSSLV%.tar.gz
-del openssl-%OSSLV%.tar.gz
-cd openssl-%OSSLV%
+set COMPILEDIR=c:\openssl-build\openssl-1.1.1%OSSLV%-%BTARCH%
+curl -LJO https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1%OSSLV%/openssl-1.1.1%OSSLV%.tar.gz
+rem %~dp0wget.exe --content-disposition https://github.com/openssl/openssl/releases/download/openssl_1_1_1%OSSLV%/openssl-1.1.1%OSSLV%.tar.gz
+tar xvfz openssl-1.1.1%OSSLV%.tar.gz
+del openssl-1.1.1%OSSLV%.tar.gz
+cd openssl-1.1.1%OSSLV%
 set OSSLARCH=VC-WIN64A
 rem VC-WIN32 VC-WIN32-ARM VC-WIN32-ONECORE VC-WIN64-ARM VC-WIN64A VC-WIN64A-ONECORE VC-WIN64A-masm VC-WIN64I
 set BTARCH=x64

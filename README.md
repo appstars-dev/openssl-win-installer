@@ -4,7 +4,7 @@ Windows installer script for openssl
 
 To compile use:
 
-1. Install Perl (Strawberryis better)
+1. Install Perl (Strawberry is better)
     
 2. Install NASM
     
