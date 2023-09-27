@@ -8,7 +8,7 @@ set VCINSTALLDIR=D:\Microsoft Visual Studio\2022\Enterprise\VC
 rem Need a version i.e. w
 set /P OSSLV="TYPE VERSION:"
 set COMPILEDIR=c:\openssl-build\openssl-1.1.1%OSSLV%-%BTARCH%
-curl -LJO https://github.com/openssl/openssl/releases/download/OpenSSL-1.1.1%OSSLV%/openssl-1.1.1%OSSLV%.tar.gz) 
+curl -LJO https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1%OSSLV%/openssl-1.1.1%OSSLV%.tar.gz 
 rem %~dp0wget.exe --content-disposition https://github.com/openssl/openssl/releases/download/openssl-1.1.1%OSSLV%/openssl-1.1.1%OSSLV%.tar.gz
 tar xvfz openssl-1.1.1%OSSLV%.tar.gz
 del openssl-1.1.1%OSSLV%.tar.gz
