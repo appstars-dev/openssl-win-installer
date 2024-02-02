@@ -1,11 +1,11 @@
 rem cd %~dp0\..
-set BTARCH=x64
+set BTARCH=win64
 C:
 cd C:\
 mkdir %BTARCH%
 cd %BTARCH%
-set VCINSTALLDIR=D:\Microsoft Visual Studio\2022\Enterprise\VC
-rem Need a version i.e. 3.1.3
+set VCINSTALLDIR=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC
+rem Need a version i.e. 3.1.5
 set /P OSSLV="TYPE VERSION:"
 set COMPILEDIR=c:\openssl-build\openssl-%OSSLV%-%BTARCH%
 curl -LJO https://github.com/openssl/openssl/releases/download/openssl-%OSSLV%/openssl-%OSSLV%.tar.gz

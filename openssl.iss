@@ -1,7 +1,7 @@
 #define MyAppName "OpenSSL"
-#define MyAppVersion "3.1.3"
-;#define MyAppVersion "3.0.11"
-;#define MyAppVersion "1.1.1w"
+#define MyAppVersion "3.2.1"
+;#define MyAppVersion "3.1.5"
+;#define MyAppVersion "3.0.13"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -68,16 +68,22 @@ Name: "Spanish";    MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "Turkish";    MessagesFile: "compiler:Languages\Turkish.isl"
 Name: "Ukrainian";  MessagesFile: "compiler:Languages\Ukrainian.isl"
 
+[Messages]
+english.BaseBinaries=Basic binaries
+english.UsrManual=HTML user manual
+english.IncLib=Includes and libraries
+english.AddToVar=Add to system %1 variable
+
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 Name: envPath; Description: "{cm:AddToVar,PATH}"
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\bin\*"; DestDir: "{app}\bin"; Flags: recursesubdirs createallsubdirs; Components: Binaries
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\html\*"; DestDir: "{app}\html"; Flags: recursesubdirs createallsubdirs; Components: Documents
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\include\*"; DestDir: "{app}\include"; Flags: recursesubdirs createallsubdirs; Components: Inclib
-Source: "..\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\lib\*"; DestDir: "{app}\lib"; Flags: recursesubdirs createallsubdirs; Components: Inclib
+Source: "C:\openssl-build\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\bin\*"; DestDir: "{app}\bin"; Flags: recursesubdirs createallsubdirs; Components: Binaries
+Source: "C:\openssl-build\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\html\*"; DestDir: "{app}\html"; Flags: recursesubdirs createallsubdirs; Components: Documents
+Source: "C:\openssl-build\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\include\*"; DestDir: "{app}\include"; Flags: recursesubdirs createallsubdirs; Components: Inclib
+Source: "C:\openssl-build\openssl-{#MyAppVersion}-{#MyAPPArchitecture}\lib\*"; DestDir: "{app}\lib"; Flags: recursesubdirs createallsubdirs; Components: Inclib
 Source: "openssl.ico"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]

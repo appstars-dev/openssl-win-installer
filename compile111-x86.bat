@@ -4,7 +4,7 @@ C:
 cd C:\
 mkdir %BTARCH%
 cd %BTARCH%
-set VCINSTALLDIR=D:\Microsoft Visual Studio\2022\Enterprise\VC
+set VCINSTALLDIR=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC
 rem Need a version i.e. w
 set /P OSSLV="TYPE VERSION:"
 set COMPILEDIR=c:\openssl-build\openssl-1.1.1%OSSLV%-%BTARCH%

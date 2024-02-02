@@ -1,7 +1,7 @@
 #define MyAppName "OpenSSL"
-#define MyAppVersion "3.1.3"
-;#define MyAppVersion "3.0.11"
-;#define MyAppVersion "1.1.1w"
+#define MyAppVersion "3.2.1"
+;#define MyAppVersion "3.1.5"
+;#define MyAppVersion "3.0.13"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -62,6 +62,11 @@ Name: "Slovenian";  MessagesFile: "compiler:Languages\Slovenian.isl"
 Name: "Spanish";    MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "Turkish";    MessagesFile: "compiler:Languages\Turkish.isl"
 Name: "Ukrainian";  MessagesFile: "compiler:Languages\Ukrainian.isl"
+
+[Messages]
+english.BaseBinaries=Basic binaries
+english.UsrManual=HTML user manual
+english.IncLib=Includes and libraries
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
