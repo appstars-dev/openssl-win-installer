@@ -1,7 +1,7 @@
 #define MyAppName "OpenSSL"
-#define MyAppVersion "3.2.1"
-;#define MyAppVersion "3.1.5"
-;#define MyAppVersion "3.0.13"
+;#define MyAppVersion "3.3.1"
+;#define MyAppVersion "3.2.2"
+#define MyAppVersion "3.1.6"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -21,9 +21,15 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-;DefaultDirName={commonpf}\{#MyAppName}
-DefaultDirName={commonpf64}\{#MyAppName}
-ArchitecturesInstallIn64BitMode=x64
+DefaultDirName={autopf}\{#MyAppName}
+; "ArchitecturesAllowed=x64compatible" specifies that Setup cannot run
+; on anything but x64 and Windows 11 on Arm.
+ArchitecturesAllowed=x64compatible
+; "ArchitecturesInstallIn64BitMode=x64compatible" requests that the
+; install be done in "64-bit mode" on x64 or Windows 11 on Arm,
+; meaning it should use the native 64-bit Program Files directory and
+; the 64-bit view of the registry.
+ArchitecturesInstallIn64BitMode=x64compatible
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=LICENSE-inst.rtf
@@ -35,26 +41,28 @@ WizardImageFile=openssl.bmp
 WizardSmallImageFile=os.bmp
 WizardStyle=modern
 Compression=lzma2/ultra64
-PrivilegesRequired=admin
+; Uncomment the following line to run in non administrative install mode (install for current user only.)
+;PrivilegesRequired=lowest
+PrivilegesRequiredOverridesAllowed=dialog
 ChangesEnvironment=true
 #define public Dependency_NoExampleSetup
 #include "CodeDependencies.iss"
 #include "environment.iss"
 
 [Languages]
-Name: "english";    MessagesFile: "compiler:Default.isl"
-Name: "armenian";   MessagesFile: "compiler:Languages\Armenian.isl"
-Name: "brazilian";  MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
-Name: "bulgarian";  MessagesFile: "compiler:Languages\Bulgarian.isl"
-Name: "catalan";    MessagesFile: "compiler:Languages\Catalan.isl"
-Name: "corsican";   MessagesFile: "compiler:Languages\Corsican.isl"
-Name: "czech";      MessagesFile: "compiler:Languages\Czech.isl"
-Name: "danish";     MessagesFile: "compiler:Languages\Danish.isl"
-Name: "dutch";      MessagesFile: "compiler:Languages\Dutch.isl"
-Name: "finnish";    MessagesFile: "compiler:Languages\Finnish.isl"
-Name: "french";     MessagesFile: "compiler:Languages\French.isl"
-Name: "german";     MessagesFile: "compiler:Languages\German.isl"
-Name: "hebrew";     MessagesFile: "compiler:Languages\Hebrew.isl"
+Name: "English";    MessagesFile: "compiler:Default.isl"
+Name: "Armenian";   MessagesFile: "compiler:Languages\Armenian.isl"
+Name: "Brazilian";  MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
+Name: "Bulgarian";  MessagesFile: "compiler:Languages\Bulgarian.isl"
+Name: "Catalan";    MessagesFile: "compiler:Languages\Catalan.isl"
+Name: "Corsican";   MessagesFile: "compiler:Languages\Corsican.isl"
+Name: "Czech";      MessagesFile: "compiler:Languages\Czech.isl"
+Name: "Danish";     MessagesFile: "compiler:Languages\Danish.isl"
+Name: "Dutch";      MessagesFile: "compiler:Languages\Dutch.isl"
+Name: "Finnish";    MessagesFile: "compiler:Languages\Finnish.isl"
+Name: "French";     MessagesFile: "compiler:Languages\French.isl"
+Name: "German";     MessagesFile: "compiler:Languages\German.isl"
+Name: "Hebrew";     MessagesFile: "compiler:Languages\Hebrew.isl"
 Name: "Icelandic";  MessagesFile: "compiler:Languages\Icelandic.isl"
 Name: "Italian";    MessagesFile: "compiler:Languages\Italian.isl"
 Name: "Japanese";   MessagesFile: "compiler:Languages\Japanese.isl"
@@ -68,11 +76,15 @@ Name: "Spanish";    MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "Turkish";    MessagesFile: "compiler:Languages\Turkish.isl"
 Name: "Ukrainian";  MessagesFile: "compiler:Languages\Ukrainian.isl"
 
-[Messages]
-english.BaseBinaries=Basic binaries
-english.UsrManual=HTML user manual
-english.IncLib=Includes and libraries
-english.AddToVar=Add to system %1 variable
+[CustomMessages]
+English.BaseBinaries=Basic binaries
+English.UsrManual=HTML user manual
+English.IncLib=Includes and libraries
+English.AddToVar=Add to system %1 variable
+Russian.BaseBinaries=Исполняемые файлы
+Russian.UsrManual=Руководство пользователя HTML
+Russian.IncLib=Вложения и библиотеки
+Russian.AddToVar=Добавить в системную переменную %1
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked

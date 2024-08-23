@@ -1,7 +1,7 @@
 #define MyAppName "OpenSSL"
-#define MyAppVersion "3.2.1"
-;#define MyAppVersion "3.1.5"
-;#define MyAppVersion "3.0.13"
+;#define MyAppVersion "3.3.1"
+;#define MyAppVersion "3.2.2"
+#define MyAppVersion "3.1.6"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -37,19 +37,19 @@ ChangesEnvironment=true
 #include "environment.iss"
 
 [Languages]
-Name: "english";    MessagesFile: "compiler:Default.isl"
-Name: "armenian";   MessagesFile: "compiler:Languages\Armenian.isl"
-Name: "brazilian";  MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
-Name: "bulgarian";  MessagesFile: "compiler:Languages\Bulgarian.isl"
-Name: "catalan";    MessagesFile: "compiler:Languages\Catalan.isl"
-Name: "corsican";   MessagesFile: "compiler:Languages\Corsican.isl"
-Name: "czech";      MessagesFile: "compiler:Languages\Czech.isl"
-Name: "danish";     MessagesFile: "compiler:Languages\Danish.isl"
-Name: "dutch";      MessagesFile: "compiler:Languages\Dutch.isl"
-Name: "finnish";    MessagesFile: "compiler:Languages\Finnish.isl"
-Name: "french";     MessagesFile: "compiler:Languages\French.isl"
-Name: "german";     MessagesFile: "compiler:Languages\German.isl"
-Name: "hebrew";     MessagesFile: "compiler:Languages\Hebrew.isl"
+Name: "English";    MessagesFile: "compiler:Default.isl"
+Name: "Armenian";   MessagesFile: "compiler:Languages\Armenian.isl"
+Name: "Brazilian";  MessagesFile: "compiler:Languages\BrazilianPortuguese.isl"
+Name: "Bulgarian";  MessagesFile: "compiler:Languages\Bulgarian.isl"
+Name: "Catalan";    MessagesFile: "compiler:Languages\Catalan.isl"
+Name: "Corsican";   MessagesFile: "compiler:Languages\Corsican.isl"
+Name: "Czech";      MessagesFile: "compiler:Languages\Czech.isl"
+Name: "Danish";     MessagesFile: "compiler:Languages\Danish.isl"
+Name: "Dutch";      MessagesFile: "compiler:Languages\Dutch.isl"
+Name: "Finnish";    MessagesFile: "compiler:Languages\Finnish.isl"
+Name: "French";     MessagesFile: "compiler:Languages\French.isl"
+Name: "German";     MessagesFile: "compiler:Languages\German.isl"
+Name: "Hebrew";     MessagesFile: "compiler:Languages\Hebrew.isl"
 Name: "Icelandic";  MessagesFile: "compiler:Languages\Icelandic.isl"
 Name: "Italian";    MessagesFile: "compiler:Languages\Italian.isl"
 Name: "Japanese";   MessagesFile: "compiler:Languages\Japanese.isl"
@@ -63,10 +63,15 @@ Name: "Spanish";    MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "Turkish";    MessagesFile: "compiler:Languages\Turkish.isl"
 Name: "Ukrainian";  MessagesFile: "compiler:Languages\Ukrainian.isl"
 
-[Messages]
-english.BaseBinaries=Basic binaries
-english.UsrManual=HTML user manual
-english.IncLib=Includes and libraries
+[CustomMessages]
+English.BaseBinaries=Basic binaries
+English.UsrManual=HTML user manual
+English.IncLib=Includes and libraries
+English.AddToVar=Add to system %1 variable
+Russian.BaseBinaries=Исполняемые файлы
+Russian.UsrManual=Руководство пользователя HTML
+Russian.IncLib=Вложения и библиотеки
+Russian.AddToVar=Добавить в системную переменную %1
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
