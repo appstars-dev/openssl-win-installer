@@ -81,10 +81,116 @@ English.BaseBinaries=Basic binaries
 English.UsrManual=HTML user manual
 English.IncLib=Includes and libraries
 English.AddToVar=Add to system %1 variable
+
+Brazilian.BaseBinaries=Bin?rios b?sicos
+Brazilian.UsrManual=Manual do usu?rio HTML
+Brazilian.IncLib=Inclui e bibliotecas
+Brazilian.AddToVar=Adicionar ? vari?vel %1 do sistema
+
+Catalan.BaseBinaries=Binaris b?sics
+Catalan.UsrManual=Manual d'usuari HTML
+Catalan.IncLib=Inclou i biblioteques
+Catalan.AddToVar=Afegeix a la variable del sistema %1
+
+Corsican.BaseBinaries=Basic binaries
+Corsican.UsrManual=HTML user manual
+Corsican.IncLib=Includes and libraries
+Corsican.AddToVar=Add to system %1 variable
+
+Czech.BaseBinaries=Basic binaries
+Czech.UsrManual=HTML user manual
+Czech.IncLib=Includes and libraries
+Czech.AddToVar=Add to system %1 variable
+
+Danish.BaseBinaries=Basic binaries
+Danish.UsrManual=HTML user manual
+Danish.IncLib=Includes and libraries
+Danish.AddToVar=Add to system %1 variable
+
+Dutch.BaseBinaries=Basic binaries
+Dutch.UsrManual=HTML user manual
+Dutch.IncLib=Includes and libraries
+Dutch.AddToVar=Add to system %1 variable
+
+Finnish.BaseBinaries=Basic binaries
+Finnish.UsrManual=HTML user manual
+Finnish.IncLib=Includes and libraries
+Finnish.AddToVar=Add to system %1 variable
+
+French.BaseBinaries=Basic binaries
+French.UsrManual=HTML user manual
+French.IncLib=Includes and libraries
+French.AddToVar=Add to system %1 variable
+
+German.BaseBinaries=Basic binaries
+German.UsrManual=HTML user manual
+German.IncLib=Includes and libraries
+German.AddToVar=Add to system %1 variable
+
+Hebrew.BaseBinaries=Basic binaries
+Hebrew.UsrManual=HTML user manual
+Hebrew.IncLib=Includes and libraries
+Hebrew.AddToVar=Add to system %1 variable
+
+Icelandic.BaseBinaries=Basic binaries
+Icelandic.UsrManual=HTML user manual
+Icelandic.IncLib=Includes and libraries
+Icelandic.AddToVar=Add to system %1 variable
+
+Italian.BaseBinaries=Basic binaries
+Italian.UsrManual=HTML user manual
+Italian.IncLib=Includes and libraries
+Italian.AddToVar=Add to system %1 variable
+
+Japanese.BaseBinaries=Basic binaries
+Japanese.UsrManual=HTML user manual
+Japanese.IncLib=Includes and libraries
+Japanese.AddToVar=Add to system %1 variable
+
+Norwegian.BaseBinaries=Basic binaries
+Norwegian.UsrManual=HTML user manual
+Norwegian.IncLib=Includes and libraries
+Norwegian.AddToVar=Add to system %1 variable
+
+Polish.BaseBinaries=Basic binaries
+Polish.UsrManual=HTML user manual
+Polish.IncLib=Includes and libraries
+Polish.AddToVar=Add to system %1 variable
+
+Portuguese.BaseBinaries=Bin?rios b?sicos
+Portuguese.UsrManual=Manual do utilizador HTML
+Portuguese.IncLib=Inclui e bibliotecas
+Portuguese.AddToVar=Adicionar ? vari?vel % 1 do sistema
+
 Russian.BaseBinaries=Исполняемые файлы
 Russian.UsrManual=Руководство пользователя HTML
 Russian.IncLib=Вложения и библиотеки
 Russian.AddToVar=Добавить в системную переменную %1
+
+Slovak.BaseBinaries=Basic binaries
+Slovak.UsrManual=HTML user manual
+Slovak.IncLib=Includes and libraries
+Slovak.AddToVar=Add to system %1 variable
+
+Slovenian.BaseBinaries=Basic binaries
+Slovenian.UsrManual=HTML user manual
+Slovenian.IncLib=Includes and libraries
+Slovenian.AddToVar=Add to system %1 variable
+
+Spanish.BaseBinaries=Basic binaries
+Spanish.UsrManual=HTML user manual
+Spanish.IncLib=Includes and libraries
+Spanish.AddToVar=Add to system %1 variable
+
+Turkish.BaseBinaries=Basic binaries
+Turkish.UsrManual=HTML user manual
+Turkish.IncLib=Includes and libraries
+Turkish.AddToVar=Add to system %1 variable
+
+Ukrainian.BaseBinaries=Базові двійкові файли
+Ukrainian.UsrManual=Посібник користувача HTML
+Ukrainian.IncLib=Включає і бібліотеки
+Ukrainian.AddToVar=Додати до системної змінної %1
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
