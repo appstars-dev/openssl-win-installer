@@ -1,7 +1,7 @@
 #define MyAppName "OpenSSL"
-;#define MyAppVersion "3.4.0"
-;#define MyAppVersion "3.3.2"
-#define MyAppVersion "3.2.3"
+;#define MyAppVersion "3.5.0"
+;#define MyAppVersion "3.4.1"
+#define MyAppVersion "3.3.3"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -24,12 +24,12 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 ; "ArchitecturesAllowed=x64compatible" specifies that Setup cannot run
 ; on anything but x64 and Windows 11 on Arm.
-ArchitecturesAllowed=x64compatible
+  ArchitecturesAllowed=x64compatible
 ; "ArchitecturesInstallIn64BitMode=x64compatible" requests that the
 ; install be done in "64-bit mode" on x64 or Windows 11 on Arm,
 ; meaning it should use the native 64-bit Program Files directory and
 ; the 64-bit view of the registry.
-ArchitecturesInstallIn64BitMode=x64compatible
+ ArchitecturesInstallIn64BitMode=x64compatible
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=LICENSE-inst.rtf
