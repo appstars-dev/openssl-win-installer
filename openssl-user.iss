@@ -1,7 +1,7 @@
 #define MyAppName "OpenSSL"
-;#define MyAppVersion "3.4.0"
-;#define MyAppVersion "3.3.2"
-#define MyAppVersion "3.2.3"
+;#define MyAppVersion "3.5.3"
+;#define MyAppVersion "3.4.2"
+#define MyAppVersion "3.3.4"
 #define MyAppPublisher "OpenSSL"
 #define MyAppURL "https://www.openssl.org/"
 #define MyAppExeName "bin\openssl.exe"
@@ -25,7 +25,7 @@ DefaultGroupName={#MyAppName}
 PrivilegesRequired=lowest
 AllowNoIcons=yes
 LicenseFile=LICENSE-inst.txt
-OutputDir=C:\OpenSSL
+OutputDir=C:\openssl-build\Installer
 OutputBaseFilename=openssl-user-{#MyAppVersion}-{#MyAPPArchitecture}
 SetupIconFile=openssl.ico
 SolidCompression=yes
@@ -149,10 +149,10 @@ Portuguese.UsrManual=Manual do utilizador HTML
 Portuguese.IncLib=Inclui e bibliotecas
 Portuguese.AddToVar=Adicionar ? vari?vel % 1 do sistema
 
-Russian.BaseBinaries=Исполняемые файлы
-Russian.UsrManual=Руководство пользователя HTML
-Russian.IncLib=Вложения и библиотеки
-Russian.AddToVar=Добавить в системную переменную %1
+Russian.BaseBinaries=пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+Russian.UsrManual=пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ HTML
+Russian.IncLib=пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+Russian.AddToVar=пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ %1
 
 Slovak.BaseBinaries=Basic binaries
 Slovak.UsrManual=HTML user manual
@@ -174,10 +174,10 @@ Turkish.UsrManual=HTML user manual
 Turkish.IncLib=Includes and libraries
 Turkish.AddToVar=Add to system %1 variable
 
-Ukrainian.BaseBinaries=Базові двійкові файли
-Ukrainian.UsrManual=Посібник користувача HTML
-Ukrainian.IncLib=Включає і бібліотеки
-Ukrainian.AddToVar=Додати до системної змінної %1
+Ukrainian.BaseBinaries=пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+Ukrainian.UsrManual=пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ HTML
+Ukrainian.IncLib=пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+Ukrainian.AddToVar=пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ %1
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked

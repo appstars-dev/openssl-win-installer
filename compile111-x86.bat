@@ -1,9 +1,9 @@
 cd %~dp0..
-set BTARCH=x86
+set BTARCH=win32
 C:
 cd C:\
-mkdir %BTARCH%
-cd %BTARCH%
+mkdir -p openssl-src\%BTARCH%
+cd openssl-src\%BTARCH%
 set VCINSTALLDIR=C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC
 rem Need a version i.e. w
 set /P OSSLV="TYPE VERSION:"
